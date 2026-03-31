@@ -23,6 +23,7 @@ centre = plt.Circle((0,0),0.70,fc='white')
 plt.gca().add_artist(centre)
 plt.show()
 
+
 comp = df[df['Company'].isin(['IBM','Amdocs'])]
 plt.bar(comp['Company'], comp['Recruitments'])
 plt.title("IBM vs Amdocs")
